@@ -100,7 +100,7 @@ public static class CustomLinq
     {
         return o switch
         {
-            string s => s,
+            string s => '"' + s + '"',
             IDictionary d => d.PrettyPrint(),
             IEnumerable l => l.PrettyPrint(),
             _ => o?.ToString()

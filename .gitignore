@@ -2,3 +2,4 @@ obj
 .idea
 global.json
 bin
+**/input.*
